@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+
+$verde: #4e9339;
+$amarillo: #fedf3f;
+$gris: #e1e1cd;
+
+$font-title: "Poppins", sans-serif;
+$font-text: "Open Sans", sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: $font-text;
+}
+
+/*--------------HEADER-----------*/
+.search-custom {
+  background-color: $verde;
+}
+.search-custom::placeholder {
+  color: white;
+}
+
+.dropdown-menu {
+  background-color: $gris;
+}
+
+.dropdown-item:hover {
+  background-color: $verde;
+  color: white;
+}
+
+.form-control:focus {
+  border-color: $verde;
+  box-shadow: 0 0 8px $verde;
+}
+
+/*--------------END HEADER-----------*/
+
+main {
+  h1 {
+    font-family: $font-title;
+    font-weight: 700;
+    color: $verde;
+  }
+
+  .conocenos-btn {
+    @extend .boton-comprar;
+    font-size: 0.75rem;
+    border-radius: 12px;
+    padding: 0.75rem 2rem;
+  }
+}
+
+.card-blog {
+  width: 40%;
+}
+
+/*------------CARDS-------------*/
+
+.card-title {
+  color: $verde;
+  text-transform: uppercase;
+  font-family: $font-title;
+  font-weight: 600;
+}
+
+.card-title-blog {
+  font-family: $font-title;
+  font-weight: 600;
+}
+
+.cont-img-comprar {
+  .boton-compra-rapida {
+    background-color: $amarillo;
+    position: absolute;
+    top: 25%;
+    opacity: 0;
+    transition: 0.5s;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
+.cont-img-comprar:hover {
+  .boton-compra-rapida {
+    z-index: 1;
+    opacity: 1;
+  }
+  .card-img-top {
+    filter: blur(1.5px);
+  }
+}
+
+/*------------END CARDS-------------*/
+
+/*------------DETAIL-------------*/
+.detail-title {
+  color: $verde;
+  text-transform: uppercase;
+  font-family: $font-title;
+  font-weight: 600;
+}
+.detail-price {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.link-detalles {
+  text-decoration: none;
+  color: $verde;
+}
+.link-detalles:hover {
+  color: $verde;
+  font-weight: bold;
+}
+.detail-form {
+  label {
+    font-weight: bold;
+  }
+  select {
+    border: 1px solid $verde;
+  }
+}
+.contador {
+  display: flex;
+  align-items: flex-start;
+  p {
+    font-weight: 800;
+    font-size: 1.5rem;
+  }
+  button {
+    background-color: $verde;
+    color: white;
+    border-radius: 100%;
+    padding: 0.25rem 0.75rem;
+    font-weight: 800;
+    font-size: 1rem;
+  }
+}
+
+.boton-aniadir {
+  background-color: $verde;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.boton-comprar {
+  @extend .boton-aniadir;
+  background-color: $amarillo;
+}
+/*------------END DETAIL-------------*/
+
+/*--------------FOOTER-----------*/
+footer {
+  background-color: $gris;
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  a:hover {
+    color: $verde;
+  }
+
+  .informacion-footer {
+    font-weight: bolder;
+  }
+}
+/*--------------END FOOTER-----------*/

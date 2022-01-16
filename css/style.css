@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif; }
+
+/*--------------HEADER-----------*/
+.search-custom {
+  background-color: #4e9339; }
+
+.search-custom::placeholder {
+  color: white; }
+
+.dropdown-menu {
+  background-color: #e1e1cd; }
+
+.dropdown-item:hover {
+  background-color: #4e9339;
+  color: white; }
+
+.form-control:focus {
+  border-color: #4e9339;
+  box-shadow: 0 0 8px #4e9339; }
+
+/*--------------END HEADER-----------*/
+main h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #4e9339; }
+
+main .conocenos-btn {
+  font-size: 0.75rem;
+  border-radius: 12px;
+  padding: 0.75rem 2rem; }
+
+.card-blog {
+  width: 40%; }
+
+/*------------CARDS-------------*/
+.card-title {
+  color: #4e9339;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600; }
+
+.card-title-blog {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600; }
+
+.cont-img-comprar .boton-compra-rapida {
+  background-color: #fedf3f;
+  position: absolute;
+  top: 25%;
+  opacity: 0;
+  transition: 0.5s;
+  text-transform: uppercase;
+  font-weight: bold; }
+
+.cont-img-comprar:hover .boton-compra-rapida {
+  z-index: 1;
+  opacity: 1; }
+
+.cont-img-comprar:hover .card-img-top {
+  filter: blur(1.5px); }
+
+/*------------END CARDS-------------*/
+/*------------DETAIL-------------*/
+.detail-title {
+  color: #4e9339;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600; }
+
+.detail-price {
+  font-size: 1.5rem;
+  font-weight: 600; }
+
+.link-detalles {
+  text-decoration: none;
+  color: #4e9339; }
+
+.link-detalles:hover {
+  color: #4e9339;
+  font-weight: bold; }
+
+.detail-form label {
+  font-weight: bold; }
+
+.detail-form select {
+  border: 1px solid #4e9339; }
+
+.contador {
+  display: flex;
+  align-items: flex-start; }
+  .contador p {
+    font-weight: 800;
+    font-size: 1.5rem; }
+  .contador button {
+    background-color: #4e9339;
+    color: white;
+    border-radius: 100%;
+    padding: 0.25rem 0.75rem;
+    font-weight: 800;
+    font-size: 1rem; }
+
+.boton-aniadir, .boton-comprar, main .conocenos-btn {
+  background-color: #4e9339;
+  text-transform: uppercase;
+  font-weight: 600; }
+
+.boton-comprar, main .conocenos-btn {
+  background-color: #fedf3f; }
+
+/*------------END DETAIL-------------*/
+/*--------------FOOTER-----------*/
+footer {
+  background-color: #e1e1cd; }
+  footer a {
+    text-decoration: none;
+    color: black; }
+  footer a:hover {
+    color: #4e9339; }
+  footer .informacion-footer {
+    font-weight: bolder; }
+
+/*--------------END FOOTER-----------*/
