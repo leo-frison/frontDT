@@ -32,8 +32,6 @@ const detail = (itemId) =>{
                     </div>
                     <br>
                     <div class="d-flex justify-content-center">
-                        <input type="hidden" name="title" value="${product.title}">
-                        <input id="price" type="hidden" name="price" value="${product.price}">
                         <button class="boton-aniadir btn me-5 p-3 w-100">Añadir al carrito</button>
                         <button type="submit" class="boton-comprar btn p-3 w-100" onclick="pay()">Comprar ahora</button>
                     </div>
